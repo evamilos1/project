@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0px 110px;
+  margin: 0px auto;
+  background: #E5E5E5;
+@media (min-width: 0px) and (max-width: 1023px) {
+  max-width: 1180px;
+  padding: 0px;
+  margin: 0px auto;
+  background: #E5E5E5;
+  }
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 1px;
+  color: #3A4959;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  border: none;
+}

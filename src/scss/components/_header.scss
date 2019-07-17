@@ -1,0 +1,113 @@
+.header {
+
+&__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+  }
+
+&__menu {
+  display: flex;
+  padding-top: 36px;
+}
+
+&__contact-us {
+  padding-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 0px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+@mixin sprite($item) {
+  height: 70px;
+  width: 223px;
+  max-width: 100%;
+  background-position: ($item) + px 2px;
+  background-image: url('./img/sprite_b.svg');
+  } 
+
+&__logo {
+  @include sprite(-1);
+  margin-right: 77px;
+  max-width: 100%;
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 48px;
+    width: 160px;
+    background-size: 130%;
+    margin-top: -8px;
+    margin-left: 35px;
+    }
+  @media (min-width: 0px) and (max-width: 767px) {
+    height: 40px;
+    width: 132px;
+    background-size: 130%;
+    margin-top: -23px;
+    margin-left: 20px;
+    }
+  }
+}
+
+.menu {
+padding: 22px 0px 20px 0px;
+@media (min-width: 0px) and (max-width: 1023px) {
+  display: none;
+}
+
+&__link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #3a4959;
+  padding-right: 27px;
+}
+}
+
+.contact-us {
+  
+&__appointment {
+  background-color: #FFCE51;
+  border-radius: 10px;
+  padding: 12px 21px 11px 22px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #3a4959;
+  text-align: center;
+  }
+
+&__number {
+  font-family: Open Sans;
+  font-style: normal;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  font-weight: 700;
+  color: #3a4959;
+  text-align: center;
+}
+}
+
+.icon {
+  display: none;
+@media (min-width: 768px) and (max-width: 1023px) {
+  display: block;
+  position: absolute;
+  top: 45px;
+  right: 30px;
+  }
+@media (min-width: 0px) and (max-width: 767px) {
+  display: block;
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  }
+}

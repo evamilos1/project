@@ -1,0 +1,289 @@
+.main {
+&__content__pain-treatment {
+    display: grid;
+    grid-gap: 0px;
+}
+
+&__content-first__services {
+    grid-template-columns: repeat(12,1fr);
+    display: grid;
+    grid-gap: 20px;
+}
+
+&__content-second__services {
+    grid-template-columns: repeat(12,1fr);
+    display: grid;
+    grid-gap: 20px;
+}
+}
+
+.pain-treatment {
+&__img {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: -5px;
+    margin-left: -60px;
+    z-index: 1;
+}
+
+&__info {
+    grid-column-start: 5;
+    grid-column-end: 12;
+
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: 1px;
+        color: #3A4959;
+        padding-top: 170px;
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 29px;
+        color: #3A4959;
+        padding-top: 16px;
+        margin-bottom: 37px;
+    }
+    &__button {
+        background: #FFCE51;
+        width: 160px;
+        padding: 10px 25px 13px 25px;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color:black;
+        border-radius: 10px;
+    }
+}
+}
+
+.pain-treatment__info__title::before {
+    content: " ";
+    position: absolute;
+    width: 110px;
+    height: 5px;
+    background: #056CDE;
+    border-radius: 10px;
+    height: 6px;
+    top: 960px;
+}
+
+.services__title::before {
+    content: " ";
+    position: absolute;
+    width: 110px;
+    height: 5px;
+    background: #056CDE;
+    border-radius: 10px;
+    height: 6px;
+    top: 1598px;
+}
+
+.services {
+
+&__title {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    margin-top: 140px;
+    z-index: 1;
+}
+
+&__card-chiropractic {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    max-width: 450px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 19px;
+    margin-bottom: 570px;
+    z-index: 1;
+}
+
+&__card-acupuncture {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    margin-top: 174px;
+    max-width: 450px;
+    max-height: 470px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+&__card-massage {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    max-width: 450px;
+    max-height: 470px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: -515px;
+}
+}
+
+.card-chiropractic {
+&__img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+&__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #3A4959;
+    padding: 31px 38px 8px 38px;
+}
+
+&__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A4959;
+    padding: 0px 38px 21px 38px;
+}
+
+&__links {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    padding: 0px 38px 38px 38px; 
+}
+}
+
+.card-acupuncture {
+&__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #3A4959;
+    padding: 30px 38px 8px 38px;
+    }
+
+&__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A4959;
+    padding: 0px 38px 21px 38px;
+    }
+
+&__links {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0px 40px 0px 40px; 
+    }
+}
+
+.card-massage {
+&__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #3A4959;
+    padding: 30px 38px 8px 38px;
+    }
+    
+&__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A4959;
+    padding: 0px 38px 21px 38px;
+    }
+    
+&__links {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0px 40px; 
+    }
+}
+
+.links {
+&__chiropractic {
+    margin-right: 18px;
+    color: #056CDE;
+}
+
+&__distraction {
+    color: #056CDE;
+}
+
+&__thompson {
+    padding: 20px 21px 0px 0px;
+    color: #056CDE;
+}
+
+&__all {
+    color: #056CDE;
+}
+
+&__cupping {
+    color: #056CDE;
+    margin-right: 18px;
+}
+
+&__chinese-herbs {
+    color: #056CDE;
+}
+
+&__tissue {
+    margin-right: 17px;
+    color: #056CDE;
+}
+
+&__trigger {
+    margin-right: 17px;
+    color: #056CDE;
+}
+
+&__massage {
+    color: #056CDE;
+}
+
+&__myofascial {
+    color: #056CDE;
+}
+}
+
+.img__bg-second {
+  background: url('./img/Vector1.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 780px;
+  left: 120px;
+  width: 600px;
+  height: 1250px;
+  z-index: 0;
+}

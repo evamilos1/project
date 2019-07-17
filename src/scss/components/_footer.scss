@@ -1,0 +1,23 @@
+.footer {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+
+&__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 0px;
+    @media (min-width: 0px) and (max-width: 767px) {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+
+&__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    }
+}
