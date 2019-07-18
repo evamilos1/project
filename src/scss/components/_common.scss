@@ -1,18 +1,18 @@
 body {
   margin: 0px;
   width: 100%;
+  background: #E5E5E5;
 }
 
 .container {
   max-width: 1180px;
   padding: 0px 110px;
   margin: 0px auto;
-  background: #E5E5E5;
+  
 @media (min-width: 0px) and (max-width: 1023px) {
   max-width: 1180px;
   padding: 0px;
   margin: 0px auto;
-  background: #E5E5E5;
   }
 }
 
