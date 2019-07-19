@@ -7,7 +7,9 @@
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 52px;
-    z-index: 2;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 &__info {
@@ -31,12 +33,12 @@
         line-height: 29px;
         color: #3A4959;
         padding-top: 16px;
-        margin-bottom: 37px;
+        margin-bottom: 47px;
     }
     &__button {
         background: #FFCE51;
         width: 160px;
-        padding: 10px 25px 13px 25px;
+        padding: 10px 62px 13px 62px;
         font-family: 'Open Sans';
         font-weight: bold;
         font-size: 13px;
@@ -78,7 +80,7 @@
 &__title {
     grid-column-start: 2;
     grid-column-end: 7;
-    margin-top: 137px;
+    margin-top: 149px;
     z-index: 1;
 }
 
@@ -154,6 +156,13 @@
 }
 
 .card-acupuncture {
+
+&__img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 &__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -186,6 +195,13 @@
 }
 
 .card-massage {
+
+&__img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 &__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -397,21 +413,21 @@
       top: 40px;
       left: -38px;
     }
-
+  
     &__doctor {
         @include sprite(1);
         position: relative;
         top: 41px;
         left: -35px;
       }
-
+  
     &__over {
         @include sprite(2);
         position: relative;
         top: 41px;
         left: -35px;
     }
-
+  
     &__insurance {
         @include sprite(3);
         position: relative;
@@ -465,3 +481,86 @@
         padding: 9px 0px 34px 63px;
     }
     }
+
+    .osvaldo {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-gap: 20px;
+
+    &__foto {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        
+        &__bg {
+            margin-top: 144px;
+            border-radius: 10px;
+        }
+
+        &__img {
+            position: relative;
+            top: -367px;
+            left: 10px;
+        }
+    }
+
+    &__info {
+        grid-column-start: 7;
+        grid-column-end: 13;
+
+        &__title {
+            margin-top: 180px;
+            margin-bottom: 18px;
+        }
+
+        &__text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 29px;
+            color: #3A4959;
+        }
+    }
+    }
+
+    
+.osvaldo__info__title::before {
+    content: " ";
+    position: absolute;
+    width: 110px;
+    height: 5px;
+    background: #056CDE;
+    border-radius: 10px;
+    height: 6px;
+    top: 3490px;
+}
+
+.main__content {
+
+&__line-first {
+    margin-top: -1225px;
+}
+
+&__advantages {
+    margin-top: -1257px;
+}
+
+&__bg {
+    z-index: 0;
+    position: relative;
+    background: url('./img/bg2.svg');
+    height: 1225px;
+    width: 590px;
+    top: -730px;
+}
+
+&__bg2 {
+    background: url('./img/bg3.svg');
+    height: 1259px;
+    width: 590px;
+    z-index: 0;
+    position: relative;
+    top: -680px;
+    right: -1312px;
+}
+}

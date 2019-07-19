@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 0;
   }
 
 &__menu {
@@ -25,13 +24,12 @@
 @mixin sprite($item) {
   height: 70px;
   width: 223px;
-  max-width: 100%;
   background-position: ($item) + px 2px;
-  background-image: url('./img/sprite_b.svg');
+  background-image: url('./img/Sprite_b.svg');
   } 
 
 &__logo {
-  @include sprite(-1);
+  @include sprite(0);
   margin-right: 77px;
   max-width: 100%;
   @media (min-width: 768px) and (max-width: 1023px) {
