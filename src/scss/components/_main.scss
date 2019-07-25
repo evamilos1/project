@@ -547,11 +547,12 @@
 
 &__bg {
     z-index: 0;
-    position: relative;
+    position: absolute;
     background: url('./img/bg2.svg');
     height: 1225px;
     width: 590px;
-    top: -730px;
+    top: 1220px;
+    left: 0px;
 }
 
 &__bg2 {
@@ -559,8 +560,8 @@
     height: 1259px;
     width: 590px;
     z-index: 0;
-    position: relative;
-    top: -680px;
-    right: -1312px;
+    position: absolute;
+    top: 2100px;
+    right: 0px;
 }
 }

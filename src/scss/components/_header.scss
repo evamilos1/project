@@ -19,38 +19,25 @@
   @media (min-width: 0px) and (max-width: 1023px) {
     display: none;
   }
-}
-
-@mixin sprite($item) {
-  height: 70px;
-  width: 223px;
-  background-position: ($item) + px 2px;
-  background-image: url('./img/Sprite_b.svg');
-  } 
-
+  }
 &__logo {
-  @include sprite(0);
-  margin-right: 77px;
-  max-width: 100%;
+  padding-right: 78px;
   @media (min-width: 768px) and (max-width: 1023px) {
-    height: 48px;
-    width: 160px;
-    background-size: 130%;
-    margin-top: -8px;
-    margin-left: 35px;
-    }
+    padding-left: 35px;
+    margin-top: -15px;
+    max-width: 160px;
+  }
   @media (min-width: 0px) and (max-width: 767px) {
-    height: 40px;
-    width: 132px;
-    background-size: 130%;
-    margin-top: -23px;
-    margin-left: 20px;
-    }
+    padding-left: 20px;
+    margin-top: -35px;
+    max-width: 132px;
+  }
   }
 }
 
 .menu {
 padding: 22px 0px 20px 0px;
+white-space: nowrap;
 @media (min-width: 0px) and (max-width: 1023px) {
   display: none;
 }
@@ -91,6 +78,7 @@ padding: 22px 0px 20px 0px;
   font-weight: 700;
   color: #3a4959;
   text-align: center;
+  white-space: nowrap;
 }
 }
 
